@@ -23,13 +23,14 @@ export const postType = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'image',
-      type: 'image',
-    }),
-    defineField({
       name: 'body',
       type: 'array',
       of: [{type: 'block'}],
+    }),
+    defineField({
+      name: 'images',
+      type: 'array',
+      of: [{type: 'image'}],
     }),
   ],
 })
