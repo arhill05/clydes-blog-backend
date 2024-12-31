@@ -31,6 +31,9 @@ export const postType = defineType({
       name: 'images',
       type: 'array',
       of: [{type: 'image'}],
+      options: {
+        layout: 'grid'
+      }
     }),
   ],
 })
